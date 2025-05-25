@@ -8,7 +8,7 @@ import markdownfile from './markdown.md'
 
 document.querySelector('.reveal').innerHTML = `
       <div class="slides">
-        <section data-markdown="${markdownfile}">
+        <section data-markdown="${markdownfile}" data-separator="^\\r?\\n---\\r?\\n" data-separator-vertical="^\\r?\\n----\\r?\\n">
       </div>
 `
 Reveal.initialize({
