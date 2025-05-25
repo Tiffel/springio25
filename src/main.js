@@ -1,5 +1,6 @@
 import 'reveal.js/dist/reveal.css'
-import 'reveal.js/dist/theme/dracula.css'
+import 'reveal.js/dist/theme/black.css'
+import './styles.css'
 import Reveal from 'reveal.js'
 import RevealMarkdown from 'reveal.js/plugin/markdown/markdown.esm.js';
 import RevealMath from 'reveal.js/plugin/math/math.esm.js';

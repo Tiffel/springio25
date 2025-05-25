@@ -1,0 +1,10 @@
+:root {
+    --r-background-color: rgb(27, 31, 35);
+    --r-main-color: #fff;
+    --r-heading-color: rgb(88, 145, 51);
+    --r-link-color: rgb(31, 152, 255);
+    --r-link-color-dark: rgb(31, 152, 255);
+    --r-link-color-hover: rgb(31, 152, 255);
+    --r-main-font: Metropolis, sans-serif;
+    --r-heading-font: Metropolis, sans-serif;
+}
