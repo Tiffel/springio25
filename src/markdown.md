@@ -39,6 +39,18 @@
 * HTTP Service Registry
 
 ---
+## Behind the scenes - Talks with Broadcom employees 
+* Licence Costs for ESXi etc. are "not that bad". LOL
+* Finally, there is focus in the infrastructure part
+<br>
+
+* VMware Tanzu is a business unit inside Broadcom
+* They are profitable and left alone
+* commitment to spring and open source is ensured
+
+
+
+---
 ## talk recommendations - must watch
 youtube links will be added when available!
 
@@ -130,7 +142,7 @@ Spring AI has a really [great documentation](https://docs.spring.io/spring-ai/re
 
 ---
 ## demo time
-<3  
+❤️  
 
 ---
 ## pictures
