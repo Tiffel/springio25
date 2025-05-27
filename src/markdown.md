@@ -26,7 +26,7 @@
 ---
 ## Major updates for Framework 7
 #### dependencies
-* Jakarta EE 11 (Tomcat 11, Hibernate ORM 9, Hibernate Validator 9)
+* Jakarta EE 11 (Tomcat 11, Hibernate ORM 7, Hibernate Validator 9)
 * Jackson 3, JUnit 6
 
 #### internal efforts
@@ -45,24 +45,24 @@ youtube links will be added when available!
 * [Keynote](https://www.youtube.com/watch?v=oUK1Np4OvnM)
   * Everything interesting starts from here
 * Top 10 Rest API Design Pitfalls
-  * Everybody has made or will make these errors. also a fun delivery by [Victor](https://victorrentea.ro/)
+  * Everybody has made or will make these errors. Helpful and a very fun presentation by [Victor](https://victorrentea.ro/)
 * Virtual Threads, Structured Concurrency and Scoped Values: Putting it all together
-  * this will change the style we write java. you will need this!
+  * This will change the style we write java. you will need this!
 
 ----
 ## talk recommendations - special interest
 youtube links will be added when available!
 
 * Code Once, Use Everywhere: Building Shared Libraries for Multiple Projects
-  * if you have a large project, you probably want this
+  * If you have a large project, you probably want this
 * Modern Authentication Demystified: A Deep Dive into Spring Security’s Latest Innovations
-  * oauth token exchange, otp, passkeys
+  * Oauth token exchange, OTP, Passkeys
 * API Versioning In Spring Framework 7
-  * missleading title. this is for rest apis 
+  * Missleading title. this is for rest apis 
 * Getting your application production-ready with Actuator
-  * nothing new or fancy, but if you do not know about actuator, watch this!
+  * Nothing new or fancy, but if you do not know about actuator, watch this!
 * Mastering Challenges of Cloud-Native Architectures With Spring
-  * spring cloud live demo
+  * Spring Cloud live demo
 * Spring for Apache Kafka the advanced features
 
 ----
@@ -72,9 +72,9 @@ youtube links will be added when available!
 * From Beans to Boot, Aspects to AI
   * Stories from the early days of spring with Rod Johnson, Jürgen Höller and Josh Long
 * Bootiful GraalVM
-  * live coding with Josh Long is always fun
+  * Live coding with Josh Long is always fun
 * Exposing the Interview Process
-    * a crazy loud shouting american recruiter explains "how to land a job"
+    * A crazy loud shouting american recruiter explains "how to land a job"
 
 ----
 ## talk recommendations - very special interest
@@ -82,13 +82,19 @@ youtube links will be added when available!
 
 * Panta rhei: runtime configuration updates with Spring Boot
 * Dependency Injection Revisited
-  * if you need to unterstand this, you may have bigger problems in your software than spring
+  * If you need to unterstand this, you may have bigger problems in your software than spring
 * A cloud cost saving journey: Strategies to balance CPU for containerized JAVA workloads in K8s
 
 ---
 ## Spring AI
-Spring AI addresses the fundamental challenge of AI integration: Connecting your enterprise Data and APIs with AI Models.
 
+>The moment I became interested in AI was when I realized I could access it through a REST API.
+
+
+----
+## Spring AI
+Spring AI addresses the fundamental challenge of AI integration:
+Connecting your enterprise Data and APIs with AI Models.
 #### Features
   * Model integration
     * Chat, Embedding, Image, Audio
@@ -101,22 +107,25 @@ Spring AI addresses the fundamental challenge of AI integration: Connecting your
   * Pattern support (RAG, agentic-systems)
 
 ---
-## The new Kubernetes Moment
-
-<img src="spring-ai-agentic-systems.jpg" width="800">
-
+## AI gets useful
 >Have you heard about the MCP Hype? It's like the new kubernetes
+
+* Fast and cheap opensource LLMs
+* Patterns for agentic systems have emerged
+* MCP leads to standardization and reuse
+
+
+
 
 ---
 ## Spring AI
->The moment I became interested in AI was when I realized I could access it through a REST API.
+>Learning JPA without knowing SQL makes no sense!
 
-learning jdbc without knowing sql makes little sence
-* Really great documentation, including a concepts section 
-* 
+Spring AI has a really [great documentation](https://docs.spring.io/spring-ai/reference/index.html), including a concepts section
 
-
-
+### talk recommendations
+* Modular RAG Architectures with Java and Spring AI
+* From Single-Shot LLMs to Intelligent Agents: Building Scalable AI Systems with Spring AI and MCP
 
 
 ---
