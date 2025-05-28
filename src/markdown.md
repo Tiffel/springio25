@@ -7,8 +7,7 @@
 #### Agenda
 1. state of spring, current trends
 1. talk recommendations (watch that later!)
-1. Spring AI Demo 
-1. pictures of our trip (if there is time)
+1. Spring AI Demo
 
 ---
 ## State of spring
@@ -144,5 +143,3 @@ Spring AI has a really [great documentation](https://docs.spring.io/spring-ai/re
 ## demo time
 ❤️  
 
----
-## pictures
