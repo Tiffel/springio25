@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang=en-us dir=ltr class=no-js>
+<head>
+    <meta name=generator content="Hugo 0.139.0">
+    <meta charset=utf-8>
+    <title>Spring I/O 2025 - The Spring Developer Conference</title>
+    <meta name=description content="Spring I/O 2025 A two-day conference full of Spring awesomeness. Barcelona, 21 - 23 May 2025">
+    <meta name=keywords content="spring io,conference,spring framework,spring boot,spring security,spring cloud,microservices,kubernetes,java,kotlin,AI">
+    <meta name=robots content="index,follow" lang=en>
+    <link rel=canonical href=https://2025.springio.net/>
+    <meta name=robots content="index,follow" lang=en>
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Spring I/O • 21-23 • May • Barcelona 2025">
+    <meta property="og:description" content>
+    <meta property="og:url" content="https://2025.springio.net/">
+    <meta property="og:site_name" content="Spring I/O • 21-23 • May • Barcelona 2025">
+    <meta property="og:image" content="https://2025.springio.net/images/pic-spring-03.jpg">
+    <base href=/>
+    <meta name=twitter:card content="summary_large_image">
+    <meta name=twitter:description content="A two-day conference full of Spring and Cloud awesomeness. Barcelona, 21 & 23 May 2025">
+    <meta name=twitter:title content="Spring I/O • 21-23 • May • Barcelona 2025">
+    <meta name=twitter:site content="@spring_io">
+    <meta name=twitter:creator content="@spring_io">
+    <meta name=twitter:image content="https://2025.springio.net/images/pic-spring-03.jpg">
+    <link rel=apple-touch-icon sizes=57x57 href=/images/favicon/apple-icon-57x57.png>
+    <link rel=apple-touch-icon sizes=60x60 href=/images/favicon/apple-icon-60x60.png>
+    <link rel=apple-touch-icon sizes=72x72 href=/images/favicon/apple-icon-72x72.png>
+    <link rel=apple-touch-icon sizes=76x76 href=/images/favicon/apple-icon-76x76.png>
+    <link rel=apple-touch-icon sizes=114x114 href=/images/favicon/apple-icon-114x114.png>
+    <link rel=apple-touch-icon sizes=120x120 href=/images/favicon/apple-icon-120x120.png>
+    <link rel=apple-touch-icon sizes=144x144 href=/images/favicon/apple-icon-144x144.png>
+    <link rel=apple-touch-icon sizes=152x152 href=/images/favicon/apple-icon-152x152.png>
+    <link rel=apple-touch-icon sizes=180x180 href=/images/favicon/apple-icon-180x180.png>
+    <link rel=icon type=image/png sizes=192x192 href=/images/favicon/android-icon-192x192.png>
+    <link rel=icon type=image/png sizes=32x32 href=/images/favicon/favicon-32x32.png>
+    <link rel=icon type=image/png sizes=96x96 href=/images/favicon/favicon-96x96.png>
+    <link rel=icon type=image/png sizes=16x16 href=/images/favicon/favicon-16x16.png>
+    <link rel=manifest href=/images/favicon/manifest.json>
+    <meta name=msapplication-TileColor content="#ffffff">
+    <meta name=msapplication-TileImage content="images/favicon/ms-icon-144x144.png">
+    <meta name=theme-color content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name=theme-color content="#0C161D" media="(prefers-color-scheme: dark)">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <script src=/js/vendor/cookieconsent.umd.js></script>
+    <script defer src=/js/cookieconsent.js></script>
+    <script>document.documentElement.className = "js"</script>
+    <link rel=stylesheet href=/css/cookieconsent.min.a9b45656f5acd6f90c0184b1e1e4e0d7ed91afe1ba361d757313bbf3030e0392.css integrity="sha256-qbRWVvWs1vkMAYSx4eTg1+2Rr+G6Nh11cxO78wMOA5I="
+          crossorigin=anonymous>
+    <link rel=stylesheet href=/css/style.min.58acbbd65da22a238229356d84f8167a64a9cb48e203b875713b66b0fbb6bbce.css integrity="sha256-WKy71l2iKiOCKTVthPgWemSpy0jiA7h1cTtmsPu2u84=" crossorigin=anonymous>
+</head>
+<body class="loading features-index">
+<header id=header class=header><a href=/ class="header-logo active-link"><img class=inject-me src=/images/logo-spring-io.svg alt="Spring I/O"></a>
+    <div class=header-actions>
+        <div id=switch-color class=switch-color><a class="toggle-color dark-off">
+            <div class=switch><span class="gooey_bg gooey_bg_1"></span><span class="gooey_bg gooey_bg_2"></span></div>
+            <div class=switch-icons><span class=switch-icons-day><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path class="sw2" d="M12 17a5 5 0 100-10 5 5 0 000 10z"/><path
+                    class="sw1 sc" d="M12 17a5 5 0 100-10 5 5 0 000 10z"/><path class="sw1"
+                                                                                d="M12 2v1.5m0 17V22M2 12h1.5m17 0H22M4.929 4.929l1.06 1.06M18.01 18.01l1.061 1.061m-14.142.0 1.06-1.06M18.01 5.99l1.061-1.061"/></svg></span><span
+                    class=switch-icons-night><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path class="sw2"
+                                                                                                               d="m9.893 2.095.43-.095A8.398 8.398.0 0022 13.682 10.076 10.076.0 119.89 2.087l.003.008z"/><path
+                    class="sw1 sc" d="m9.893 2.095.43-.095A8.398 8.398.0 0022 13.682 10.076 10.076.0 119.89 2.087l.003.008z"/><path class="sw1 st"
+                                                                                                                                    d="M20 9h2m-1-1v2m-4-7.732A2 2 0 0017.732 5 2 2 0 0015 5.732 2 2 0 0014.268 3 2 2 0 0017 2.268z"/></svg></span>
+            </div>
+        </a></div>
+        <a href=#tickets class="button smooth-scroll"><img class=inject-me src=/images/icons/buy.svg alt="Buy Now"><span>Get Your Ticket</span></a>
+        <div class=menu-button>
+            <div class=hamburger><span></span><span></span><span></span><span class=cross></span><span class=cross></span></div>
+        </div>
+    </div>
+</header>
+<div class=menu>
+    <div class=menu-content>
+        <nav>
+            <ul class=menu-list>
+                <li class=violet><a href=/sessions class=active-link>Sessions</a></li>
+                <li class=magenta><a href=/workshops class=active-link>Workshops</a></li>
+                <li class=green><a href=/speakers class=active-link>Speakers</a></li>
+                <li class=orange><a href=/sponsors class=active-link>Sponsors</a></li>
+                <li class=yellow><a href=/venue class=active-link>Venue</a></li>
+                <li class=turquoise><a href=/side-events class=active-link>Side Events</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<main class=main-content>
+    <section id=hero class="wrapper hero min-full-height">
+        <div class=hero-animation>
+            <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 100 100">
+                <defs>
+                    <radialgradient id="a" cx="50%" cy="50%" r=".5" fx=".442%" fy="50%">
+                        <animate attributeName="fx" dur="44s" repeatCount="indefinite" values="0%;3%;0%"/>
+                        <stop offset="0" stop-color="hsla(var(--gradient-animation-1))"/>
+                        <stop offset="100%" stop-color="hsla(var(--gradient-animation-2))"/>
+                    </radialgradient>
+                    <radialgradient id="b" cx="50%" cy="50%" r=".5" fx="2.681%" fy="50%">
+                        <animate attributeName="fx" dur="33.5s" repeatCount="indefinite" values="0%;3%;0%"/>
+                        <stop offset="0" stop-color="hsla(var(--gradient-animation-3))"/>
+                        <stop offset="100%" stop-color="hsla(var(--gradient-animation-4))"/>
+                    </radialgradient>
+                    <radialgradient id="c" cx="50%" cy="50%" r=".5" fx=".837%" fy="50%">
+                        <animate attributeName="fx" dur="31.5s" repeatCount="indefinite" values="0%;3%;0%"/>
+                        <stop offset="0" stop-color="hsla(var(--gradient-animation-5))"/>
+                        <stop offset="100%" stop-color="hsla(var(--gradient-animation-6))"/>
+                    </radialgradient>
+                </defs>
+                <rect width="100%" height="100%" x="13.744%" y="1.185%" fill="url(#a)" transform="rotate(334.41 50 50)">
+                    <animate attributeName="x" dur="30s" repeatCount="indefinite" values="25%;0%;25%"/>
+                    <animate attributeName="y" dur="31s" repeatCount="indefinite" values="0%;25%;0%"/>
+                    <animatetransform attributeName="transform" dur="27s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/>
+                </rect>
+                <rect width="100%" height="100%" x="-2.179%" y="35.427%" fill="url(#b)" transform="rotate(255.072 50 50)">
+                    <animate attributeName="x" dur="33s" repeatCount="indefinite" values="-25%;0%;-25%"/>
+                    <animate attributeName="y" dur="34s" repeatCount="indefinite" values="0%;50%;0%"/>
+                    <animatetransform attributeName="transform" dur="22s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/>
+                </rect>
+                <rect width="100%" height="100%" x="9.005%" y="14.573%" fill="url(#c)" transform="rotate(139.903 50 50)">
+                    <animate attributeName="x" dur="35s" repeatCount="indefinite" values="0%;25%;0%"/>
+                    <animate attributeName="y" dur="22s" repeatCount="indefinite" values="0%;25%;0%"/>
+                    <animatetransform attributeName="transform" dur="19s" from="360 50 50" repeatCount="indefinite" to="0 50 50" type="rotate"/>
+                </rect>
+            </svg>
+        </div>
+        <div class=hero-marquee>
+            <div class=hero-marquee-content><span>&nbsp;<b data-descr=2O25>2O25</b>&nbsp;</span></div>
+        </div>
+        <div class=hero-images><img src=/images/hero/hero-skyline-empty.webp class="hero-img moon" alt=Moon><img src=/images/hero/hero-skyline-empty.webp class="hero-img sun" alt=Sun><img
+                src=/images/hero/hero-skyline-empty.webp class="hero-img skyline-back" alt=Skyline><img src=/images/hero/hero-skyline-empty.webp class="hero-img skyline-back dark" alt=Skyline><img
+                src=/images/hero/hero-skyline-empty.webp class="hero-img skyline-middle" alt=Skyline><img src=/images/hero/hero-skyline-empty.webp class="hero-img skyline-middle dark" alt=Skyline><img
+                src=/images/hero/hero-skyline-empty.webp class="hero-img skyline-front" alt=Skyline><img src=/images/hero/hero-skyline-empty.webp class="hero-img skyline-front dark" alt=Skyline><img
+                src=/images/hero/hero-flower-left.svg class="hero-img inject-me" alt=Flower><img src=/images/hero/hero-flower-right.svg class="hero-img inject-me" alt=Flower>
+            <div class="scale-object d1"><img src=/images/hero/hero-clouds-empty.webp class="hero-img clouds-back-1" alt=Clouds><img src=/images/hero/hero-clouds-empty.webp
+                                                                                                                                     class="hero-img clouds-back-1 dark" alt=Clouds></div>
+            <div class="scale-object d2"><img src=/images/hero/hero-clouds-empty.webp class="hero-img clouds-back-2" alt=Clouds><img src=/images/hero/hero-clouds-empty.webp
+                                                                                                                                     class="hero-img clouds-back-2 dark" alt=Clouds></div>
+            <div class="scale-object d3"><img src=/images/hero/hero-clouds-empty.webp class="hero-img hot-air-balloon" alt="Hot Air Balloon"><img src=/images/hero/hero-clouds-empty.webp
+                                                                                                                                                  class="hero-img hot-air-balloon dark"
+                                                                                                                                                  alt="Hot Air Balloon"></div>
+            <div class="scale-object d4"><img src=/images/hero/hero-clouds-empty.webp class="hero-img clouds-front-1" alt=Clouds><img src=/images/hero/hero-clouds-empty.webp
+                                                                                                                                      class="hero-img clouds-front-1 dark" alt=Clouds></div>
+            <div class="scale-object d5"><img src=/images/hero/hero-clouds-empty.webp class="hero-img clouds-front-2" alt=Clouds><img src=/images/hero/hero-clouds-empty.webp
+                                                                                                                                      class="hero-img clouds-front-2 dark" alt=Clouds></div>
+        </div>
+        <div class=noise></div>
+        <div class=hero-text><h1 class=content__title data-splitting data-effect-fly-in-static>The <b>Spring</b></h1>
+            <h2 class=content__title data-splitting data-effect-fly-in-static>Developer Conference</h2>
+            <p class=content__title data-splitting data-effect-fly-in-static>Be part of the future and the next generation of Spring applications</p>
+            <div class="hero-cta show-action"><strong>SOLD OUT <span></span></strong>
+                <a href=#tickets class="button button-xlarge smooth-scroll"><img class=inject-me src=/images/icons/clock-play.svg alt="Get Your Ticket"><span>Join the Waitlist</span></a></div>
+        </div>
+        <div class="hero-info show-static"><h5><span>21 May</span><strong>Full-Day Workshops</strong></h5><h5><span>May 2O25</span><strong>Barcelona</strong></h5><h5><span>22-23 May</span><strong>2-Day
+            Conference</strong></h5></div>
+        <div class="hero-links show-static"><p>Join and connect at the<br>must-attend event of the year</p>
+            <div class=hero-buttons><a href=/sessions class="button button-medium button--outline violet color-text np active-link"><span>View Full Schedule</span></a>
+                <a href=/workshops class="button button-medium button--outline magenta color-text np active-link"><span>Explore Workshops</span></a></div>
+            <a href=#info class="chevron smooth-scroll"></a></div>
+    </section>
+    <section id=info class="wrapper info index-font">
+        <div class=grid-lines>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+        </div>
+        <div class=info-title>
+            <div class=video-container-mask><img src=/images/video-empty-info.png alt>
+                <img src=/images/pic-video-info.jpg alt>
+                <video class=background-video-info autoplay loop muted>
+                    <source src=/images/video-info.mp4 type=video/mp4>
+                </video>
+            </div>
+            <h2 class=content__title data-splitting data-effect-3d-flip>Spring</h2>
+            <h2 class=content__title data-splitting data-effect-3d-flip>Conference</h2></div>
+        <p class="content__title content__title--left" data-splitting data-effect-smooth-brightness>Spring I/O 2025 will take place in the beautiful city of Barcelona.<br><br>Join the Spring community
+            from around the world.<br><br>There is no better place to share, discuss, collaborate and socialise with other Spring professionals and enthusiasts.<br><br>Don’t miss the chance to join us
+            in this exciting event!</p>
+        <div class="info-numbers anim-group-container">
+            <div class=info-stats>
+                <div class=anim-block><p class=counter data-count=1200>0</p>
+                    <p>Attendees</p></div>
+                <div class=anim-block><p class=counter data-count=80>0</p>
+                    <p>Speakers</p></div>
+                <div class=anim-block><p class=counter data-count=60>0</p>
+                    <p>Talks</p></div>
+                <div class=anim-block><p class=counter data-count=9>0</p>
+                    <p>Workshops</p></div>
+            </div>
+            <div class=info-venue>
+                <div class=anim-block><p>Barcelona</p></div>
+                <div class=anim-block><p>May • 21 - 23 • 2025</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper cycling-challenge">
+        <div class="marquee-container reverse">
+            <div class="logo icon-marquee rotate"><img class=inject-me src=/images/icons/arrow-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/chrono-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/bike-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/award-s.svg alt></div>
+            <div class="logo icon-marquee rotate"><img class=inject-me src=/images/icons/arrow-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/chrono-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/bike-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/award-s.svg alt></div>
+            <div class="logo icon-marquee rotate"><img class=inject-me src=/images/icons/arrow-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/chrono-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/bike-s.svg alt></div>
+            <div class="logo icon-marquee"><img class=inject-me src=/images/icons/award-s.svg alt></div>
+        </div>
+        <a class=toggle-btn data-target=#cycling-challenge data-class-target=.cycling-challenge data-additional-class-target=.toggle-content><span class=chevron></span>
+            <p>Road To Spring I/O<br>The ride starts here</p><span class=chevron></span></a></section>
+    <section id=cycling-challenge class=toggle-content>
+        <div class="wrapper info cfp index-font">
+            <div class=grid-lines>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+                <div class=grid-lines__line></div>
+            </div>
+            <div class=info-title>
+                <div class="video-container-img jersey">
+                    <div class="flower no-anim"><img src=/images/video-empty-info.png alt></div>
+                </div>
+                <h2 class="content__title color-green" data-splitting data-effect-3d-flip>Road To</h2>
+                <h2 class="content__title color-green" data-splitting data-effect-3d-flip>Spring I/O</h2></div>
+            <a href=/cycling-jersey class="circle-text bold center anim-block active-link" data-splitting><img class=inject-me src=/images/icons/flower.svg alt="Bean There Rode That">Bean<b>·</b>There<b>·</b>Rode<b>·</b>That<b>·</b></a>
+            <p class="content__title content__title--left" data-splitting data-effect-smooth-brightness>Join the weekly competition where every kilometer counts and get closer to the exclusive Spring
+                I/O cycling jersey!<br><br><br></p>
+            <div class=anim-block><a href=/cycling-jersey class="button button-xlarge auto violet active-link"><span>Join the challenge today!</span></a></div>
+        </div>
+    </section>
+    <section id=gallery class="wrapper gallery align-center index-font">
+        <div class=hero-animation>
+            <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 100 100">
+                <defs>
+                    <radialgradient id="d" cx="50%" cy="50%" r=".5" fx=".442%" fy="50%">
+                        <animate attributeName="fx" dur="44s" repeatCount="indefinite" values="0%;3%;0%"/>
+                        <stop offset="0" stop-color="hsla(var(--gradient-animation-1))"/>
+                        <stop offset="100%" stop-color="hsla(var(--gradient-animation-2))"/>
+                    </radialgradient>
+                    <radialgradient id="e" cx="50%" cy="50%" r=".5" fx="2.681%" fy="50%">
+                        <animate attributeName="fx" dur="33.5s" repeatCount="indefinite" values="0%;3%;0%"/>
+                        <stop offset="0" stop-color="hsla(var(--gradient-animation-3))"/>
+                        <stop offset="100%" stop-color="hsla(var(--gradient-animation-4))"/>
+                    </radialgradient>
+                    <radialgradient id="f" cx="50%" cy="50%" r=".5" fx=".837%" fy="50%">
+                        <animate attributeName="fx" dur="31.5s" repeatCount="indefinite" values="0%;3%;0%"/>
+                        <stop offset="0" stop-color="hsla(var(--gradient-animation-5))"/>
+                        <stop offset="100%" stop-color="hsla(var(--gradient-animation-6))"/>
+                    </radialgradient>
+                </defs>
+                <rect width="100%" height="100%" x="13.744%" y="1.185%" fill="url(#d)" transform="rotate(334.41 50 50)">
+                    <animate attributeName="x" dur="30s" repeatCount="indefinite" values="25%;0%;25%"/>
+                    <animate attributeName="y" dur="31s" repeatCount="indefinite" values="0%;25%;0%"/>
+                    <animatetransform attributeName="transform" dur="27s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/>
+                </rect>
+                <rect width="100%" height="100%" x="-2.179%" y="35.427%" fill="url(#e)" transform="rotate(255.072 50 50)">
+                    <animate attributeName="x" dur="33s" repeatCount="indefinite" values="-25%;0%;-25%"/>
+                    <animate attributeName="y" dur="34s" repeatCount="indefinite" values="0%;50%;0%"/>
+                    <animatetransform attributeName="transform" dur="22s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/>
+                </rect>
+                <rect width="100%" height="100%" x="9.005%" y="14.573%" fill="url(#f)" transform="rotate(139.903 50 50)">
+                    <animate attributeName="x" dur="35s" repeatCount="indefinite" values="0%;25%;0%"/>
+                    <animate attributeName="y" dur="22s" repeatCount="indefinite" values="0%;25%;0%"/>
+                    <animatetransform attributeName="transform" dur="19s" from="360 50 50" repeatCount="indefinite" to="0 50 50" type="rotate"/>
+                </rect>
+            </svg>
+        </div>
+        <div class=noise></div>
+        <div class=title><h2 class=content__title data-splitting data-effect-3d-flip>Take a look</h2><h4 class=content__title data-splitting data-effect-fly-in>at last year's edition</h4></div>
+        <div class=gallery-content>
+            <div class=item><img src=/images/pics/pic-spring-01.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-02.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-03.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item>
+                <div class=video-container-gallery><img src=/images/video-empty-gallery.png alt>
+                    <img src=/images/pics/pic-spring-04.jpg alt="Pic Spring I/O">
+                    <video class=background-video-gallery autoplay loop muted>
+                        <source src=/images/video-gallery.mp4 type=video/mp4>
+                    </video>
+                </div>
+            </div>
+            <div class=item><img src=/images/pics/pic-spring-05.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-06.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><a href="https://www.youtube.com/watch?v=CsiCKAInWhg&list=PLe6FX2SlkJdQyqVIMrhYRYx-3KYDASifZ" target=_blank>
+                <figure><img src=/images/pics/pic-spring-transparent.png alt="Pic Spring I/O">
+                    <figcaption class=background-green>View Spring I/O 2024 Video Summary</figcaption>
+                </figure>
+                <img class="inject-me al0" src=/images/img-shape-arrow-top-right.svg alt="Detail illustration SPRING I/O"></a></div>
+            <div class=item><img src=/images/pics/pic-spring-07.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-08.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-09.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><a href=https://2024.springio.net/ target=_blank>
+                <figure><img src=/images/pics/pic-spring-transparent.png alt="Pic Spring I/O">
+                    <figcaption class=background-purple>View Spring I/O 2024 Edition</figcaption>
+                </figure>
+                <img class="inject-me al0" src=/images/img-shape-arrow-top-right.svg alt="Detail illustration SPRING I/O"></a></div>
+            <div class=item><img src=/images/pics/pic-spring-10.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-11.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-12.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-13.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><img src=/images/pics/pic-spring-14.jpg alt="Pic Spring I/O" loading=lazy></div>
+            <div class=item><a href="https://www.youtube.com/watch?v=sGmhaizFcEA&list=PLe6FX2SlkJdQyqVIMrhYRYx-3KYDASifZ" target=_blank>
+                <figure><img src=/images/pics/pic-spring-transparent.png alt="Pic Spring I/O">
+                    <figcaption class=background-red>View Spring I/O 2024 Talks</figcaption>
+                </figure>
+                <img class="inject-me al0" src=/images/img-shape-arrow-top-right.svg alt="Detail illustration SPRING I/O"></a></div>
+        </div>
+    </section>
+    <div id=workshops class="wrapper workshops align-center index-font">
+        <div class=title><h2 class=content__title data-splitting data-effect-3d-flip>Workshops</h2><h4 class=content__title data-splitting data-effect-fly-in>Get ready to level up your Spring
+            skills!<br>Full-day Workshops - 21st May, 2025</h4></div>
+        <ul class="workshops-features anim-group-container">
+            <li class=anim-block><img class="inject-me anim-svg quick-anim" src=/images/icons/sparkles.svg alt="Focused on Key Technologies"><span>Focused on Key Topics</span></li>
+            <li class=anim-block><img class="inject-me anim-svg quick-anim" src=/images/icons/diamond.svg alt="Led by Renowned Experts"><span>Expert-Led Sessions</span></li>
+            <li class=anim-block><img class="inject-me anim-svg quick-anim" src=/images/icons/fire.svg alt="Designed for Immediate Impact"><span>Limited Group Sizes</span></li>
+            <li class=anim-block><img class="inject-me anim-svg quick-anim" src=/images/icons/hand.svg alt="Hands-On and Collaborative"><span>Hands-On & Collaborative</span></li>
+        </ul>
+        <section class="workshops-list items-col-4 anim-group-container">
+            <div class=anim-block><h5>Advanced Spring Data JPA</h5>
+                <p>Thorben Janssen</p></div>
+            <div class=anim-block><h5>Beyond the Hype: Building AI Agents with Spring</h5>
+                <p>Adib Saikali / Christian Tzolov</p></div>
+            <div class=anim-block><h5>Modular Monolith with Spring Modulith</h5>
+                <p>Victor Rentea</p></div>
+            <div class=anim-block><h5>Testing Spring Boot Applications Demystified</h5>
+                <p>Philip Riecks</p></div>
+        </section>
+        <div class=anim-block><a href=/workshops class="button button-xlarge auto magenta active-link"><span>View all workshops</span></a></div>
+    </div>
+    <section id=tickets class="wrapper tickets align-center index-font isopad npb">
+        <div class=hero-marquee-iso>
+            <div class=hero-animation>
+                <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 100 100">
+                    <defs>
+                        <radialgradient id="g" cx="50%" cy="50%" r=".5" fx=".442%" fy="50%">
+                            <animate attributeName="fx" dur="44s" repeatCount="indefinite" values="0%;3%;0%"/>
+                            <stop offset="0" stop-color="hsla(var(--gradient-animation-7))"/>
+                            <stop offset="100%" stop-color="hsla(var(--gradient-animation-8))"/>
+                        </radialgradient>
+                        <radialgradient id="h" cx="50%" cy="50%" r=".5" fx="2.681%" fy="50%">
+                            <animate attributeName="fx" dur="33.5s" repeatCount="indefinite" values="0%;3%;0%"/>
+                            <stop offset="0" stop-color="hsla(var(--gradient-animation-9))"/>
+                            <stop offset="100%" stop-color="hsla(var(--gradient-animation-10))"/>
+                        </radialgradient>
+                        <radialgradient id="i" cx="50%" cy="50%" r=".5" fx=".837%" fy="50%">
+                            <animate attributeName="fx" dur="31.5s" repeatCount="indefinite" values="0%;3%;0%"/>
+                            <stop offset="0" stop-color="hsla(var(--gradient-animation-11))"/>
+                            <stop offset="100%" stop-color="hsla(var(--gradient-animation-12))"/>
+                        </radialgradient>
+                    </defs>
+                    <rect width="100%" height="100%" x="13.744%" y="1.185%" fill="url(#g)" transform="rotate(334.41 50 50)">
+                        <animate attributeName="x" dur="30s" repeatCount="indefinite" values="25%;0%;25%"/>
+                        <animate attributeName="y" dur="31s" repeatCount="indefinite" values="0%;25%;0%"/>
+                        <animatetransform attributeName="transform" dur="27s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/>
+                    </rect>
+                    <rect width="100%" height="100%" x="-2.179%" y="35.427%" fill="url(#h)" transform="rotate(255.072 50 50)">
+                        <animate attributeName="x" dur="33s" repeatCount="indefinite" values="-25%;0%;-25%"/>
+                        <animate attributeName="y" dur="34s" repeatCount="indefinite" values="0%;50%;0%"/>
+                        <animatetransform attributeName="transform" dur="22s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/>
+                    </rect>
+                    <rect width="100%" height="100%" x="9.005%" y="14.573%" fill="url(#i)" transform="rotate(139.903 50 50)">
+                        <animate attributeName="x" dur="35s" repeatCount="indefinite" values="0%;25%;0%"/>
+                        <animate attributeName="y" dur="22s" repeatCount="indefinite" values="0%;25%;0%"/>
+                        <animatetransform attributeName="transform" dur="19s" from="360 50 50" repeatCount="indefinite" to="0 50 50" type="rotate"/>
+                    </rect>
+                </svg>
+            </div>
+            <div class=hero-marquee>
+                <div class=hero-marquee-content><span>&nbsp;<b data-descr=Tickets>Tickets</b>&nbsp;</span></div>
+            </div>
+            <div class=w100><p class=h2>Tickets</p>
+                <p class=h4>Late Bird tickets</div>
+            <div class=noise></div>
+        </div>
+        <div class=title><h2 class=content__title data-splitting data-effect18>Tickets</h2><h4 class=content__title data-splitting data-effect19>Late Bird tickets</h4></div>
+        <ul class=ticket-io>
+            <li class=sold-out>
+                <div class=section-title><p>Early Bird Ticket<br><span>Sold Out</span></p>
+                    <p class=price>419 €</p></div>
+                <div class=section-content>
+                    <div class="ticket-title default">
+                        <div class=ticket-detail-top></div>
+                        <h3>Early Bird</h3><h4>419 €</h4>
+                        <p>Sold Out</p>
+                        <div class=ticket-detail-bottom></div>
+                    </div>
+                    <div class=ticket-logo><img class=inject-me src=/images/logo-spring-io.svg alt="Spring I/O"></div>
+                </div>
+            </li>
+            <li class=sold-out>
+                <div class=section-title><p>Standard Ticket<br><span>Sold Out</span></p>
+                    <p class=price>519 €</p></div>
+                <div class=section-content>
+                    <div class="ticket-title default">
+                        <div class=ticket-detail-top></div>
+                        <h3>Standard</h3><h4>519 €</h4>
+                        <p>Sold Out</p>
+                        <div class=ticket-detail-bottom></div>
+                    </div>
+                    <div class=ticket-logo><img class=inject-me src=/images/logo-spring-io.svg alt="Spring I/O"></div>
+                </div>
+            </li>
+            <li class=active>
+                <div class=section-title><p>Late Bird Ticket<br><span>Sold Out</span></p>
+                    <p class=price>&nbsp;</p></div>
+                <div class=section-content>
+                    <div class=ticket-title>
+                        <div class=ticket-detail-top></div>
+                        <h3>Late Bird</h3><h4>619 €<br><span class=vat>(VAT excluded)</span></h4>
+                        <p class=h4>Sold Out</p></div>
+                    <div class=ticket-cta>
+                        <div class=ticket-detail-top></div>
+                        <img class="inject-me arrow" src=/images/img-shape-arrow.svg alt=Arrow><img class="inject-me arrow" src=/images/img-shape-arrow.svg alt=Arrow>
+                        <h3>The Spring Conference</h3><a href=https://reg.springio.net/event/sio2025 class="button button-xlarge"><img class=inject-me src=images/icons/clock-play.svg
+                                                                                                                                       alt="Get Your Ticket"><span>Join the Waitlist</span></a>
+                        <div class=ticket-venue-date><p>Barcelona</p>
+                            <p>May • 22 - 23 • 2025</p>
+                            <p>2-Day Conference</p>
+                            <p><span>Fira de Barcelona</span></p></div>
+                    </div>
+                </div>
+                <div class=section-content>
+                    <div class="ticket-title default">
+                        <div class=ticket-detail-top></div>
+                        <h3>Late Bird</h3><h4></h4>
+                        <p></p>
+                        <div class=ticket-detail-bottom></div>
+                    </div>
+                    <div class=ticket-logo><img class=inject-me src=/images/logo-spring-io.svg alt="Spring I/O"></div>
+                </div>
+            </li>
+        </ul>
+        <div class="image-marquee-container reverse"><img src=/images/pics/pic-spring-01.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-03.jpg alt="Pic Spring I/O"><img
+                src=/images/pics/pic-spring-19.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-20.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-24.jpg alt="Pic Spring I/O"><img
+                src=/images/pics/pic-spring-05.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-21.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-06.jpg alt="Pic Spring I/O"><img
+                src=/images/pics/pic-spring-17.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-22.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-23.jpg alt="Pic Spring I/O"><img
+                src=/images/pics/pic-spring-07.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-18.jpg alt="Pic Spring I/O"><img src=/images/pics/pic-spring-04.jpg alt="Pic Spring I/O"></div>
+    </section>
+    <section id=pye class="wrapper info pye vc-img index-font">
+        <div class=grid-lines>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+        </div>
+        <div class=info-title>
+            <div class=video-container-img>
+                <div class=flower><img src=/images/video-empty-info.png alt></div>
+            </div>
+            <h2 class=content__title data-splitting data-effect-3d-flip>Plan Your</h2>
+            <h2 class=content__title data-splitting data-effect-3d-flip>Experience</h2></div>
+        <p class="content__title content__title--left" data-splitting data-effect-smooth-brightness>Check out the full agenda and discover the talks and workshops that will make Spring I/O 2025
+            unforgettable.<br><br>Learn from industry experts, connect with fellow developers, and explore the latest innovations that will shape the future of Spring technology.<br><br>Also, make
+            sure to join our side events! They're the perfect chance to meet fellow attendees in a relaxed setting, exchange ideas, and strengthen your professional network beyond the scheduled talks
+            and workshops.<br><br></p>
+        <div class="cards cards-links col-2 anim-group-container"><a href=/sessions class="card violet center anim-block active-link">
+            <div><img class="card-icon card-color inject-me anim-svg quick-anim" src=/images/icons/calendar.svg alt=Attendees></div>
+            <div class=h5>View Full Schedule</div>
+        </a><a href=/side-events class="card turquoise center anim-block active-link">
+            <div><img class="card-icon card-color inject-me anim-svg quick-anim" src=/images/icons/turntable.svg alt="Led by Renowned Experts"></div>
+            <div class=h5>Explore Side Events</div>
+        </a></div>
+    </section>
+    <div id=sponsors class="wrapper align-center past-sponsors index-font">
+        <div class=title><h2 class=content__title data-splitting data-effect-3d-flip>Sponsors</h2><h4 class=content__title data-splitting data-effect-fly-in>Our 2025 Sponsors</h4></div>
+        <div class=marquee-container>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-vmware.svg alt="VMware Tanzu"></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-jetbrains.svg alt=JetBrains></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-bellsoft.svg alt=Bellsoft></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-bitvavo.svg alt=Bitvavo></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-herodevs.svg alt=Herodevs></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-redis.svg alt=Redis></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-moderne.svg alt=Moderne></div>
+        </div>
+        <div class="marquee-container reverse">
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-moderne.svg alt=Moderne></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-redis.svg alt=Redis></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-herodevs.svg alt=Herodevs></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-bitvavo.svg alt=Bitvavo></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-bellsoft.svg alt=Bellsoft></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-jetbrains.svg alt=JetBrains></div>
+            <div class="logo logo-marquee"><img class=inject-me src=/images/sponsors/img-sponsors-logo-vmware.svg alt="VMware Tanzu"></div>
+        </div>
+        <div class="anim-block w100">
+            <div class="anim-block w100"><a href=/sponsors class="button button-xlarge auto orange active-link"><span>View All Sponsors</span></a></div>
+        </div>
+    </div>
+    <section id=venue class="wrapper info venue last index-font">
+        <div class=grid-lines>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+            <div class=grid-lines__line></div>
+        </div>
+        <div class=info-title>
+            <div class="video-container-mask bcn"><img src=/images/video-empty-info.png alt>
+                <img src=/images/pic-video-discover.jpg alt>
+                <video class=background-video-info playsinline autoplay loop muted>
+                    <source src=/images/video-discover.mp4 type=video/mp4>
+                </video>
+            </div>
+            <h2 class=content__title data-splitting data-effect-3d-flip>Fira de</h2>
+            <h2 class=content__title data-splitting data-effect-3d-flip>Barcelona</h2></div>
+        <p class="content__title content__title--left" data-splitting data-effect-smooth-brightness>The Palau de Congressos de Barcelona is a large conference centre situated in an atmospheric and
+            picturesque location in Barcelona called Montjuïc.<br><br>City communications are excellent and access from Barcelona’s Airport and Sants Station is very quick.<br><br>Barcelona is a
+            beautiful and vibrant city located on the Mediterranean coast of Spain. It offers a wide variety of interesting places to visit and activities to enjoy, such as the famous Sagrada Familia
+            by Gaudí, Parc Güell, the Barcelona Cathedral, and the Gothic Quarter.<br><br></p>
+        <div class=anim-block><a href=venue.html class="button button-xlarge auto yellow color-text-invert active-link"><span>Explore the venue</span></a></div>
+    </section>
+    <footer><p>© Copyright 2025 Spring I/O.<br>All rights reserved<br>Organized with <span role=img aria-label=love>❤️</span> by <a href=https://twitter.com/sergialmar target=_blank>Sergi Almar</a>
+    </p>
+        <p><a href=/codeofconduct title="Code of Conduct">Code of Conduct</a> / <a href=/terms-and-conditions title="Terms & Conditions">Terms & Conditions</a> /<br><a href=mailto:info@springio.net
+                                                                                                                                                                        title=Contact>Contact</a> / <a
+                href=https://twitter.com/spring_io title=Twitter>Twitter</a> / <a href=https://www.youtube.com/@SpringIOConference title=YouTube>YouTube</a> /</p></footer>
+</main>
+<div class=preloader>
+    <div class=progress-number data-descr=0%>0%</div>
+    <div class=progress-bar-container>
+        <div class=progress-bar></div>
+    </div>
+</div>
+<div class=overlay></div>
+<script src=/js/vendor/imagesloaded.pkgd.min.js></script>
+<script src=/js/vendor/gsap.min.js></script>
+<script src=/js/vendor/ScrollTrigger.min.js></script>
+<script src=/js/vendor/splitting.min.js></script>
+<script src=/js/vendor/lenis.min.js></script>
+<script src=/js/vendor/fontfaceobserver.standalone.js></script>
+<script src=/js/vendor/svg-inject.min.js></script>
+<script type=module src=/js/app.2e4f986f2f41cf625cf9063324be9c6c717af9f9dba87d1af095c5b95e7a84d5.js integrity="sha256-Lk+Yby9Bz2Jc+QYzJL6cbHF6+fnbqH0a8JXFuV56hNU=" crossorigin=anonymous></script>
+</body>
+</html>

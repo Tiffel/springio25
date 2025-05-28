@@ -1,0 +1,43 @@
+POST http://localhost:8080/
+Content-Type: application/json
+
+"My Name is Christian"
+
+### Memory
+POST http://localhost:8080/
+Content-Type: application/json
+
+"Whats my Name?"
+
+### Tools
+POST http://localhost:8080/
+Content-Type: application/json
+
+"What time is it in London?"
+
+### Tools
+POST http://localhost:8080/
+Content-Type: application/json
+
+"How is the weather there?"
+
+### RAG
+POST http://localhost:8080/
+Content-Type: application/json
+
+"When will java 25 be released?"
+
+
+### RAG
+POST http://localhost:8080/
+Content-Type: application/json
+
+"What is the MCP Hype?"
+
+
+### RAG
+POST http://localhost:8080/
+Content-Type: application/json
+
+"Where was Spring Io 2025?"
+

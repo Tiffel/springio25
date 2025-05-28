@@ -1,0 +1,13 @@
+services:
+  postgres:
+    labels:
+      # see https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#features.docker-compose.custom-images for details
+      org.springframework.boot.service-connection: postgres
+    image: "pgvector/pgvector:pg17"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "password"
+      PGDATA: "/data/postgres"
+    ports:
+      - "5432"
+    restart: unless-stopped

@@ -1,0 +1,32 @@
+spring:
+  ai:
+    ollama:
+      chat:
+        model: qwen3:8b
+      embedding:
+        model: mxbai-embed-large
+    vectorstore:
+      pgvector:
+        remove-existing-vector-store-table: true
+        initialize-schema: true
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        dimensions: 1024
+  application:
+    name: springaidemo
+  docker:
+    compose:
+      lifecycle-management: start-only #attention! This is great for demo purposes, but bad if you forget to stop the container :)
+
+#tame logging for demo
+  main:
+    banner-mode: off
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor: debug
+    com.zaxxer.hikari: off
+    org.apache.catalina: off
+    org.springframework.boot.docker.compose: off
+    org.springframework.ai.vectorstore: off
+
+
