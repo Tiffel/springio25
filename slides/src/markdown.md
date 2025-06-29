@@ -72,9 +72,9 @@ youtube links will be added when available!
   * Missleading title. this is for rest apis 
 * Getting your application production-ready with Actuator
   * Nothing new or fancy, but if you do not know about actuator, watch this!
-* Mastering Challenges of Cloud-Native Architectures With Spring
+* [Mastering Challenges of Cloud-Native Architectures With Spring](https://www.youtube.com/watch?v=hASsv4eQSgs)
   * Spring Cloud live demo
-* Spring for Apache Kafka the advanced features
+* [Spring for Apache Kafka the advanced features](https://www.youtube.com/watch?v=Z0Jcr5Q7FaI)
 
 ----
 ## talk recommendations - entertainment
@@ -82,9 +82,9 @@ youtube links will be added when available!
 
 * From Beans to Boot, Aspects to AI
   * Stories from the early days of spring with Rod Johnson, Jürgen Höller and Josh Long
-* Bootiful GraalVM
+* [Bootiful GraalVM](https://www.youtube.com/watch?v=uAYYDJ_ubBg)
   * Live coding with Josh Long is always fun
-* Exposing the Interview Process
+* [Exposing the Interview Process](https://www.youtube.com/watch?v=X9_i0DhnJcw)
     * A crazy loud shouting american recruiter explains "how to land a job"
 
 ----
